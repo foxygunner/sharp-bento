@@ -7,9 +7,9 @@ import { Toaster } from "@/components/ui/sonner";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { siteConfig } from "@/config/site";
 import { SiteHeader } from "@/components/navbar/site-header";
+import { Footer } from "@/components/footer";
 
 import "./globals.css";
-import { Footer } from "@/components/footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

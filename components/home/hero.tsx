@@ -5,6 +5,7 @@ import { Section, Container } from "@/components/craft";
 import Logo from "@/public/airborn.gif";
 
 import { BackgroundLines } from "../ui/background-lines";
+import GridPattern from "../ui/grid-pattern";
 
 const Hero = () => {
   return (
@@ -14,7 +15,7 @@ const Hero = () => {
           <div className="m-auto flex h-full w-full max-w-5xl flex-col gap-8 px-4 py-4 md:px-6 md:py-10">
             {/* Large Text */}
             <h1 className="text-3xl font-normal tracking-tight md:text-6xl">
-              Bento is a Commanding Figure {/* eslint-disable-next-line */}
+              Bento is a commanding figure {/* eslint-disable-next-line */}
               <Image
                 className="my-auto -mt-3 inline w-24 md:-mt-6 md:w-48"
                 width={192}
@@ -70,6 +71,7 @@ const Hero = () => {
           </div>
         </Container>
       </Section>
+      <GridPattern />
     </BackgroundLines>
   );
 };

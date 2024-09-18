@@ -61,7 +61,7 @@ export default function Roadmap() {
       id="roadmap"
     >
       <Container className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12">
+        <h2 className="text-2xl font-normal text-center mb-12">
           Our Memetic Roadmap
         </h2>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -77,7 +77,7 @@ export default function Roadmap() {
                 <CardHeader className="flex flex-row items-start justify-between gap-4">
                   <div className="flex items-center gap-4">
                     {step.icon}
-                    <CardTitle>{step.title}</CardTitle>
+                    <CardTitle className="text-md">{step.title}</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent>

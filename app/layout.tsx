@@ -23,11 +23,43 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url.base),
   title: {
     default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`,
+    template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  authors: [
+    {
+      name: siteConfig.author,
+      // url: siteConfig.url.author,
+    },
+  ],
+  creator: siteConfig.author,
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteConfig.url.base,
+    title: siteConfig.name,
+    description: siteConfig.description,
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 500,
+        height: 500,
+        alt: siteConfig.name,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: [siteConfig.ogImage],
+    creator: siteConfig.author,
+  },
 };
 
 export const viewport: Viewport = {

@@ -1,5 +1,6 @@
 "use client";
-import { Clapperboard, Home, List, Book, Tv } from "lucide-react";
+import Image from "next/image";
+import { Home, Users, Route } from "lucide-react";
 import * as React from "react";
 import Link from "next/link";
 
@@ -13,12 +14,17 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import logoImg from "@/public/bent.png";
 
 export function MainNav() {
   return (
     <div className="mr-4 hidden xl:flex">
       <Link href="/" className="mr-6 flex items-center space-x-2">
-        <Clapperboard className="h-6 w-6" />
+        <Image
+          src={logoImg}
+          alt="Bento Logo"
+          className="h-10 w-10 dark:invert"
+        />
       </Link>
       <nav className="flex items-center gap-4 text-sm lg:gap-6">
         <NavigationMenu>
@@ -33,39 +39,25 @@ export function MainNav() {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuTrigger>
-                <Tv className="h-4 w-4" />
-                <div className="px-2"> Watch </div>
+                <Users className="h-4 w-4" />
+                <div className="px-2"> Community </div>
               </NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[400px]">
-                  <ListItem href="/movie" title="Movie">
-                    Explore Movie Marvels: Spectacles Await You!
+                  <ListItem href="/x" title="X">
+                    X (formerly Twitter): Join our meme fun!
                   </ListItem>
-                  <ListItem href="/tv" title="Tv Shows">
-                    Live on TV Shows: Addiction await ≥
-                  </ListItem>
-                  <ListItem href="/drama" title="Drama">
-                    Indulge in Drama: Emotions Await!
-                  </ListItem>
-                  <ListItem href="/anime" title="Anime">
-                    Dive into Anime Worlds: Adventures Await!
+                  <ListItem href="/telegram" title="Telegram">
+                    Telegram: Meme community chat!
                   </ListItem>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/manga" legacyBehavior passHref>
+              <Link href="/#roadmap" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <Book className="h-4 w-4" />
-                  <div className="px-2"> Manga </div>
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/list" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <List className="h-4 w-4" />
-                  <div className="px-2"> List </div>
+                  <Route className="h-4 w-4" />
+                  <div className="px-2"> Roadmap </div>
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>

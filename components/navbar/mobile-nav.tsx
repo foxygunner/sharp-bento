@@ -3,6 +3,7 @@
 import * as React from "react";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 import { mobileConfig } from "@/config/mobile";
 import { siteConfig } from "@/config/site";
@@ -11,6 +12,7 @@ import { Icons } from "@/components/common/icons";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import logoImg from "@/public/bent.png";
 
 export function MobileNav() {
   const [open, setOpen] = React.useState(false);
@@ -33,7 +35,11 @@ export function MobileNav() {
             className="flex items-center"
             onOpenChange={setOpen}
           >
-            <Icons.clapperboard className="mr-2 h-4 w-4" />
+            <Image
+              src={logoImg}
+              alt="Bento Logo"
+              className="mr-2 h-10 w-10 dark:invert"
+            />
             <span className="font-bold">{siteConfig.name}</span>
           </MobileLink>
           <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">

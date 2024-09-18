@@ -56,7 +56,10 @@ export default function Roadmap() {
   ];
 
   return (
-    <Section className="not-prose py-16 bg-gradient-to-b from-background to-secondary">
+    <Section
+      className="not-prose mt-32 lg:mt-0 py-16 bg-gradient-to-b from-background to-secondary"
+      id="roadmap"
+    >
       <Container className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12">
           Our Memetic Roadmap

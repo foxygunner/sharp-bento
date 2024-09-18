@@ -1,7 +1,9 @@
 import Link from "next/link";
-import { Clapperboard, GithubIcon, TwitterIcon } from "lucide-react";
+import Image from "next/image";
 
 import { siteConfig } from "@/config/site";
+import logoImg from "@/public/bent.png";
+import { Icons } from "./common/icons";
 
 export const Footer = () => {
   return (
@@ -9,7 +11,11 @@ export const Footer = () => {
       <div className="border-t p-4">
         <div className="mx-auto flex max-w-6xl flex-col gap-4 md:flex-row md:items-center md:justify-between md:gap-0">
           <div className="flex items-center gap-2">
-            <Clapperboard size={20} />
+            <Image
+              src={logoImg}
+              alt="Bento Logo"
+              className="h-10 w-10 dark:invert"
+            />
             <h2 className="text-md font-normal">{siteConfig.name}</h2>
           </div>
 
@@ -24,12 +30,12 @@ export const Footer = () => {
           </div>
 
           <div className="flex items-center gap-2 [&_a]:rounded-full [&_a]:border [&_a]:px-3 [&_a]:py-1 [&_a]:shadow">
-            <Link href={siteConfig.links.github}>
-              <GithubIcon />
+            <Link href="/telegram">
+              <Icons.telegram className="h-5 w-5" />
             </Link>
 
-            <Link href={siteConfig.links.twitter}>
-              <TwitterIcon />
+            <Link href="/x">
+              <Icons.twitter className="h-5 w-5" />
             </Link>
           </div>
         </div>

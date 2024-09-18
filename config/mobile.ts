@@ -12,33 +12,25 @@ export const mobileConfig: MobileConfig = {
       href: "/",
     },
     {
-      title: "Anime",
-      href: "/anime",
+      title: "Roadmap",
+      href: "/#roadmap",
     },
     {
-      title: "Manga",
-      href: "/manga",
+      title: "Telegram",
+      href: "/telegram",
     },
     {
-      title: "Drama",
-      href: "/drama",
-    },
-    {
-      title: "Movie",
-      href: "/movie",
-    },
-    {
-      title: "TV",
-      href: "/tv",
+      title: "X",
+      href: "/x",
     },
   ],
   sidebarNav: [
     {
-      title: "Other Features",
+      title: "Exchanges",
       items: [
         {
-          title: "List",
-          href: "/list",
+          title: "Pump.fun",
+          href: "/pumpfun",
           items: [],
         },
       ],

@@ -16,11 +16,7 @@ export function SiteHeader() {
         <MobileNav />
         <div className="flex flex-1 items-center space-x-2 justify-end">
           <nav className="flex items-center">
-            <Link
-              href={siteConfig.links.github}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <Link href="/telegram" target="_blank" rel="noreferrer">
               <div
                 className={cn(
                   buttonVariants({
@@ -29,15 +25,11 @@ export function SiteHeader() {
                   "w-9 px-0"
                 )}
               >
-                <Icons.gitHub className="h-5 w-5" />
-                <span className="sr-only">GitHub</span>
+                <Icons.telegram className="h-5 w-5" />
+                <span className="sr-only">Telegram</span>
               </div>
             </Link>
-            <Link
-              href={siteConfig.links.twitter}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <Link href="/x" target="_blank" rel="noreferrer">
               <div
                 className={cn(
                   buttonVariants({
@@ -47,7 +39,7 @@ export function SiteHeader() {
                 )}
               >
                 <Icons.twitter className="h-5 w-5 fill-current" />
-                <span className="sr-only">Twitter</span>
+                <span className="sr-only">X (Formerly Twitter)</span>
               </div>
             </Link>
 

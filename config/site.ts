@@ -24,5 +24,5 @@ export const siteConfig = {
     "Raydium",
     "Bento",
   ],
-  ogImage: `${siteUrl}/og.png`,
+  ogImage: `${siteUrl}/airborn.gif`,
 };

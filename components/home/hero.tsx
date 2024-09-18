@@ -5,7 +5,6 @@ import { Section, Container } from "@/components/craft";
 import Logo from "@/public/airborn.gif";
 
 import { BackgroundLines } from "../ui/background-lines";
-import GridPattern from "../ui/grid-pattern";
 
 const Hero = () => {
   return (
@@ -71,7 +70,6 @@ const Hero = () => {
           </div>
         </Container>
       </Section>
-      <GridPattern />
     </BackgroundLines>
   );
 };

@@ -20,12 +20,12 @@ export const Footer = () => {
           </div>
 
           <div className="flex items-center gap-2">
-            <p className="text-xs text-muted-foreground">© 2024 avalynndev</p>
+            <p className="text-xs text-muted-foreground">© 2024 Bento</p>
 
             <div className="h-3 border-r" />
 
             <span className=" text-xs text-muted-foreground">
-              Data provided by Consumet and Tmdb API
+              Bento says we are going to the moon
             </span>
           </div>
 

@@ -26,7 +26,7 @@ export default function Roadmap() {
     {
       icon: <Rocket className="w-8 h-8 text-purple-500" />,
       title: "Pump Fun Launch",
-      description: "Initial token launch and listing on major meme exchanges",
+      description: "Initial token launch on pump.fun",
       status: "completed" as Status,
     },
     {
@@ -57,7 +57,7 @@ export default function Roadmap() {
 
   return (
     <Section
-      className="not-prose mt-32 lg:mt-0 py-16 bg-gradient-to-b from-background to-secondary"
+      className="not-prose mt-40 lg:mt-0 py-16 bg-gradient-to-b from-background to-secondary"
       id="roadmap"
     >
       <Container className="container mx-auto px-4">

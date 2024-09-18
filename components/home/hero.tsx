@@ -14,7 +14,7 @@ const Hero = () => {
           <div className="m-auto flex h-full w-full max-w-5xl flex-col gap-8 px-4 py-4 md:px-6 md:py-10">
             {/* Large Text */}
             <h1 className="text-3xl font-normal tracking-tight md:text-6xl">
-              Bento is aCommanding Figure {/* eslint-disable-next-line */}
+              Bento is a Commanding Figure {/* eslint-disable-next-line */}
               <Image
                 className="my-auto -mt-3 inline w-24 md:-mt-6 md:w-48"
                 width={192}

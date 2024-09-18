@@ -9,7 +9,7 @@ export const siteConfig = {
   author: "anon",
 
   links: {
-    twitter: "/#",
+    twitter: "https://x.com/bentotoken",
     pumpfun: "/#",
     telegram: "https://t.me/+7BkidVA9BZ80NTg0",
   },

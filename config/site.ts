@@ -1,12 +1,12 @@
 export type SiteConfig = typeof siteConfig;
 
-const siteUrl = "https://sharp-bento.vercel.app";
+const siteUrl = "https://bentonsol.com";
 
 export const siteConfig = {
   name: "Sharp Bento Coin",
   description:
     "Bento is a commanding figure, who leads the community to greater heights.",
-  author: "anon",
+  author: "Bento Retard",
 
   links: {
     twitter: "https://x.com/bentotoken",

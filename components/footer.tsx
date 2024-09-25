@@ -7,7 +7,7 @@ import { Icons } from "./common/icons";
 
 export const Footer = () => {
   return (
-    <div className="mx-auto max-w-6xl overflow-hidden rounded-lg shadow-sm lg:mb-4 lg:border">
+    <div className="mx-auto max-w-6xl overflow-hidden font-coffee rounded-lg shadow-sm lg:mb-4 lg:border">
       <div className="border-t p-4">
         <div className="mx-auto flex max-w-6xl flex-col gap-4 md:flex-row md:items-center md:justify-between md:gap-0">
           <div className="flex items-center gap-2">

@@ -23,13 +23,13 @@ export function MobileNav() {
         <SheetTrigger asChild>
           <Button
             variant="ghost"
-            className="mr-2 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 xl:hidden"
+            className="mr-2 px-0 font-coffee text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 xl:hidden"
           >
             <span className="sr-only">Toggle Menu</span>
             <Icons.mobile_button className="mr-2 h-5 w-5" />
           </Button>
         </SheetTrigger>
-        <SheetContent side="left" className="pr-0">
+        <SheetContent side="left" className="pr-0 font-coffee">
           <MobileLink
             href="/"
             className="flex items-center"

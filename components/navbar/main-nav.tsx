@@ -18,7 +18,7 @@ import logoImg from "@/public/bent.png";
 
 export function MainNav() {
   return (
-    <div className="mr-4 hidden xl:flex">
+    <div className="mr-4 font-coffee hidden xl:flex">
       <Link href="/" className="mr-6 flex items-center space-x-2">
         <Image
           src={logoImg}

@@ -104,6 +104,11 @@ const config: Config = {
         backgroundPositionSpin:
           "background-position-spin 3000ms infinite alternate",
       },
+      fontFamily: {
+        sans: ["var(--font-geist-sans)"],
+        mono: ["var(--font-geist-mono)"],
+        coffee: ["var(--font-coffee-soda)"],
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

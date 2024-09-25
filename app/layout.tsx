@@ -21,6 +21,11 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const coffeeSoda = localFont({
+  src: "./fonts/CoffeeSoda.ttf",
+  variable: "--font-coffee-soda",
+  weight: "100 900",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url.base),
@@ -77,7 +82,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-background`}
+        className={`${geistSans.variable} ${geistMono.variable} ${coffeeSoda.variable} antialiased min-h-screen bg-background`}
       >
         <ThemeProvider
           attribute="class"

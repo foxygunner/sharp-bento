@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <BackgroundLines>
       <Section className="not-prose">
-        <Container>
+        <Container className="bg-[url('/hero.png')] dark:bg-[url('/hero-dark.png')]">
           <div className="m-auto flex h-full font-coffee w-full max-w-5xl flex-col gap-8 px-4 py-4 md:px-6 md:py-10">
             {/* Large Text */}
             <h1 className="text-3xl font-normal tracking-tight md:text-6xl">
